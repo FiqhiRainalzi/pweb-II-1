@@ -13,7 +13,7 @@ class database
         $this->koneksi = mysqli_connect($this->host, $this->username, $this->password, $this->db);
     }
 
-    function tampil_dosen()
+    function tampil_dsn()
     {
         $data = mysqli_query($this->koneksi, "select * from dosen");
         while ($d = mysqli_fetch_array($data)) {

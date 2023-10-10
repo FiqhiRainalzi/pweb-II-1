@@ -2,8 +2,8 @@
 <form action="proses_dsn.php?aksi=tambah" method="post">
     <table>
         <tr>
-            <td>NIM </td>
-            <td><input type="text" name="nim"></td>
+            <td>NIDN </td>
+            <td><input type="text" name="nidn"></td>
         </tr>
         <tr>
             <td>Nama </td>

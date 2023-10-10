@@ -39,7 +39,7 @@ $db = new database;
                                 <tr>
                                     <?php
                                     $no = 1;
-                                    foreach ($db->tampil_dosen() as $x) {
+                                    foreach ($db->tampil_dsn() as $x) {
                                     ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
