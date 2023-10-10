@@ -16,7 +16,6 @@ if (isset($_GET["aksi"])) {
         header("location:tampil_mhs.php");
     }
 } else {
-    // Handle the case where 'aksi' is not set (e.g., show an error message or redirect to an error page).
     echo "Aksi parameter is not set.";
 }
 

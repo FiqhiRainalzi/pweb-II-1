@@ -17,12 +17,14 @@
             }
             return $hasil;
         }
+       
 
         function tambah_mhs($nim,$nama,$alamat){
             {
                 mysqli_query($this->koneksi, "insert into mahasiswa (nim,nama,alamat) values ('$nim','$nama','$alamat')");
             }
         }
+      
 
         function edit($id){
                 $data = mysqli_query($this->koneksi , "select * from mahasiswa where id='$id'");
@@ -31,10 +33,12 @@
                 }
                 return $hasil;
         }
+     
 
         function update($id, $nim, $nama, $alamat){
             mysqli_query($this->koneksi, "UPDATE mahasiswa SET nim='$nim', nama='$nama', alamat='$alamat' WHERE id='$id'");
         }
+
 
         function hapus($id){
             mysqli_query($this->koneksi, "DELETE FROM mahasiswa WHERE id='$id'");

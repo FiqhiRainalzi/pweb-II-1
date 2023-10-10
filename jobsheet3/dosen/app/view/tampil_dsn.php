@@ -1,8 +1,8 @@
 <?php
 //memanggil class databases
-include '../classes/databases.php';
+include '../classes/database.php';
 //instansiasi databases
-$db = new databases;
+$db = new database;
 ?>
 
 <!DOCTYPE html>
@@ -20,16 +20,16 @@ $db = new databases;
         <div class="card-header">
             <div class="card">
                 <div class="card-body">
-                    <h1 >Tabel Mahasiswa </h1>
+                    <h1 >Tabel Dosen </h1>
                     &nbsp;
-                    <a class="btn btn-primary" href="input_mhs.php" role="button">Tambah Mahasiswa +</a>
+                    <a class="btn btn-primary" href="input_dsn.php" role="button">Tambah Dosen +</a>
                     <br>&nbsp;
                     <div class="table-responsive small">
                         <table border="1" class="table table-striped table-sm">
                             <thead>
                                 <tr>
                                     <th scope="col">No</th>
-                                    <th scope="col">NIM</th>
+                                    <th scope="col">NIDN</th>
                                     <th scope="col">Nama</th>
                                     <th scope="col">Alamat</th>
                                     <th scope="col">Aksi</th>
@@ -39,17 +39,16 @@ $db = new databases;
                                 <tr>
                                     <?php
                                     $no = 1;
-                                    foreach ($db->tampil_mahasiswa() as $x) {
+                                    foreach ($db->tampil_dosen() as $x) {
                                     ?>
                                 <tr>
                                     <td><?php echo $no++ ?></td>
-                                    <td><?php echo $x['nim'] ?></td>
+                                    <td><?php echo $x['nidn'] ?></td>
                                     <td><?php echo $x['nama'] ?></td>
                                     <td><?php echo $x['alamat'] ?></td>
                                     <td>
-                                        <a class="btn btn-warning" href="edit_mhs.php?id=<?php echo $x['id'];?>&aksi=edit" >edit</a>
-                                        <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">hapus</a>
-
+                                    <a class="btn btn-warning" href="edit_dsn.php?id=<?php echo $x['id']; ?>&aksi=edit" >Edit</a>
+                                    <a class="btn btn-danger" href="proses_dsn.php?id=<?php echo $x['id']; ?>&aksi=hapus">hapus</a>
                                     </td>
                                 </tr>
                             <?php
