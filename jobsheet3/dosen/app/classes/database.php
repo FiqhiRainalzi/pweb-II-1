@@ -24,7 +24,7 @@ class database
     
     function tambah_dsn($nidn, $nama, $alamat)
     {
-        mysqli_query($this->koneksi, "insert into dosen (nidn,nama,alamat) values('$nidn','$nama','$alamat')");
+        mysqli_query($this->koneksi, "insert into dosen (nidn,nama,alamat) values ('$nidn','$nama','$alamat')");
     }
 
     function edit($id)
