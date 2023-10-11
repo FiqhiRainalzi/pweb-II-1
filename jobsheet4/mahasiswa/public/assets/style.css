@@ -1,0 +1,32 @@
+form {
+  display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        min-height: 100vh;
+        border: 2px solid #ccc; /* Ketebalan dan warna border */
+        padding: 2px; /* Jarak antara konten dan border */
+        border-radius: 10px; /* Sudut bulat pada border */
+  }
+  table {
+    
+      background-color: whitesmoke;
+      padding: 10px;
+      border-spacing: 8px;
+      border-radius: 8px;
+      width: 100%;
+
+}
+.border{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+.bborder{
+    background-color:rgba(235, 232, 232, 0.699);
+    padding: 5px;
+    border-spacing: 8px;
+    border-radius: 8px;
+}
