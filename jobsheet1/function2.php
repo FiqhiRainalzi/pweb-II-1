@@ -46,7 +46,7 @@
         else 
         {
             $luaspersegipanjang = persegi_panjang($p,$l);
-            echo "Luas persegi panjang" . $luaspersegipanjang;
+            echo "Luas persegi panjang " . $luaspersegipanjang;
         }
     }
 

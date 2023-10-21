@@ -20,11 +20,11 @@ if(isset($_POST['submit']))
 
     if($result)
     {
-        header ("location:index.php");
+        header ("location:mahasiswa");
     }
     else
     {
-        header ("location:tambah.php");
+        header ("location:tambah_mhs");
     }
 }
 ?>

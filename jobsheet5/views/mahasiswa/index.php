@@ -21,7 +21,7 @@ $mahasiswa = $mahasiswaController->getAllMahasiswa();
         <div class="card-body">
           <h1>Data Mahasiswa </h1>
           &nbsp;
-          <a class="btn btn-primary" href="tambah.php" role="button">Tambah Mahasiswa +</a>
+          <a class="btn btn-primary" href="tambah_mhs" role="button">Tambah Mahasiswa +</a>
           <br>&nbsp;
           <?php
           if (isset($_GET['pesan'])) {
@@ -79,9 +79,10 @@ $mahasiswa = $mahasiswaController->getAllMahasiswa();
                   <td><?php echo $x['alamat'] ?></td>
 
                   <td>
-                    <a class="btn btn-warning" href="edit.php?id=<?php echo $x['id']; ?>">Edit</a>
-                    <a class="btn btn-danger" href="hapus.php?id=<?php echo $x['id']; ?>"
-                    onclick=" return confirm('apakah yakin ingin dihapus?')">Hapus</a>
+                    <a class="btn btn-warning" href="edit_mhs/<?php echo $x['id']; ?>">Edit</a>
+                    <a class="btn btn-danger" href="hapus_mhs/<?php echo $x['id']; ?>"
+                 onclick="return confirm('Apakah yakin ingin dihapus?')">Hapus</a>
+
                   </td>
                 </tr>
                 <?php

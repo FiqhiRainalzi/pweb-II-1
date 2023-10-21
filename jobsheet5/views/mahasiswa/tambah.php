@@ -13,7 +13,7 @@ require "../../index.php"
 </head>
 <body>
 <div class="py-3">
-<form class="container" action="proses_tambah.php" method="post">
+<form class="container" action="proses_mhs" method="post">
 <table>
             <h3>Tambah Data Mahasiswa</h3>
             <tr>
@@ -64,7 +64,7 @@ require "../../index.php"
                 
                 <td><div class="py-2">
                     <input class="btn btn-primary" name="submit" type="submit" value="Simpan">
-                    <a class="btn btn-secondary" href="index.php">Kembali</a>
+                    <a class="btn btn-secondary" href="mahasiswa">Kembali</a>
                     </div>
                 </td>
             </tr>
