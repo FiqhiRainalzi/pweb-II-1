@@ -2,7 +2,7 @@
 //memanggil class databases
 include '../classes/database.php';
 //instansiasi databases
-$db = new database;
+$db = new database();
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ $db = new database;
                                     <td><?php echo $x['alamat'] ?></td>
                                     <td>
                                     <a class="btn btn-warning" href="edit_dsn.php?id=<?php echo $x['id']; ?>&aksi=edit" >Edit</a>
-                                    <a class="btn btn-danger" href="proses_dsn.php?id=<?php echo $x['id']; ?>&aksi=hapus">hapus</a>
+                                    <a class="btn btn-danger" href="proses_dsn.php?id=<?php echo $x['id']; ?>&aksi=hapus"  onclick="return confirm('Anda yakin ingin menghapus data?')">hapus</a>
                                     </td>
                                 </tr>
                             <?php

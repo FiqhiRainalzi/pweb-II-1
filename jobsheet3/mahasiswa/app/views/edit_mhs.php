@@ -21,7 +21,7 @@ $db = new databases();
             </tr>
             <tr>
                 <td>Alamat </td>
-                <td><textarea name="alamat" cols="16" rows="2"> <?php echo $d['alamat'] ?></textarea></td>
+                <td><textarea name="alamat" cols="16" rows="2"><?php echo $d['alamat'] ?></textarea></td>
             </tr>
             <tr>
                 <td></td>

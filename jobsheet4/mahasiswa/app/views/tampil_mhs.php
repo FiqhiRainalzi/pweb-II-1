@@ -12,7 +12,7 @@ $db = new databases;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRUD</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css ">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <div class="px-3">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -95,7 +95,8 @@ $db = new databases;
                     <td><?php echo $x['alamat'] ?></td>
                     <td>
                       <a class="btn btn-warning" href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit">Edit</a>
-                      <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">hapus</a>
+                      <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus"
+                      onclick="return confirm('Anda yakin ingin menghapus data?')">hapus</a>
                     </td>
                   </tr>
                 <?php

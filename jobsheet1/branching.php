@@ -11,7 +11,6 @@
         <input type="text" name="nilai" id="nilai">
         <input type="submit" value="cek" name="cek">
     </form>
-
     <?php
      //mengambil nilai yang dimasukan oleh pengguna dari formulir
     if(isset($_POST["cek"])){

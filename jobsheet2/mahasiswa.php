@@ -38,7 +38,6 @@ class dosen {
 $nama_mahasiswa = new mahasiswa();
 //tampilkan objek ke layar
 echo $nama_mahasiswa->tampil_nama();
-
 //objek baru nama_dosen
 $nama_dosen = new dosen();
 echo $nama_dosen->tampil_nama();

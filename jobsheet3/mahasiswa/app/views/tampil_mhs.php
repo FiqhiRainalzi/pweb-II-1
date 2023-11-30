@@ -48,7 +48,7 @@ $db = new databases;
                                     <td><?php echo $x['alamat'] ?></td>
                                     <td>
                                     <a class="btn btn-warning" href="edit_mhs.php?id=<?php echo $x['id']; ?>&aksi=edit" >Edit</a>
-                                        <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus">hapus</a>
+                                        <a class="btn btn-danger" href="proses_mhs.php?id=<?php echo $x['id']; ?>&aksi=hapus"  onclick="return confirm('Anda yakin ingin menghapus data?')">hapus</a>
                                     </td>
                                 </tr>
                             <?php

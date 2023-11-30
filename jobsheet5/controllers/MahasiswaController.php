@@ -1,5 +1,5 @@
 <?php
-include_once "../../models/mahasiswa.php";
+include_once "../../models/Mahasiswa.php";
 
 class MahasiswaController{
     //properti model untuk me-return di construct

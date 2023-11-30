@@ -1,0 +1,31 @@
+.container {
+    max-width: 400px; /* Lebar maksimum kontainer form */
+    margin: 0 auto; /* Posisi form di tengah halaman */
+    padding: 20px; /* Ruang pembatas dari tepi form ke kontennya */
+    border: 1px solid #4d4b4b; /* Garis pinggiran untuk membuat tampilan kotak */
+    border-radius: 5px; /* Sudut bulat untuk tampilan lebih menarik */
+    background-color: rgb(56, 53, 53); /* Warna latar belakang form */
+  }
+
+.login {
+  margin: 250px auto;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: lightblue;
+}
+
+form {
+  height: 520px;
+    width: 400px;
+    background-color: rgba(8, 8, 8, 0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(5, 5, 5, 0.1);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    padding: 50px 35px;
+}

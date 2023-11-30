@@ -13,41 +13,12 @@ $mahasiswa = $mahasiswaController->getAllMahasiswa();
 <!DOCTYPE html>
 <html lang="en">
 <body>
-  
-
   <div class="card">
     <div class="card-header">
-      <div class="card">
         <div class="card-body">
           <h1>Data Mahasiswa </h1>
-          &nbsp;
           <a class="btn btn-primary" href="tambah_mhs" role="button">Tambah Mahasiswa +</a>
           <br>&nbsp;
-          <?php
-          if (isset($_GET['pesan'])) {
-            $pesan = $_GET['pesan'];
-            $alertClass = '';
-            $alertText = '';
-
-            if ($pesan == "Data telah dihapus") {
-              $alertClass = 'alert-danger';
-              $alertText = 'Data berhasil dihapus!';
-            } elseif ($pesan == "Data telah ditambah") {
-              $alertClass = 'alert-success';
-              $alertText = 'Data berhasil ditambah!';
-            } elseif ($pesan == "Data telah diedit") {
-              $alertClass = 'alert-warning';
-              $alertText = 'Data berhasil diedit!';
-            }
-
-            if ($alertClass && $alertText) {
-              echo '<div class="alert ' . $alertClass . ' alert-dismissible">
-                      ' . $alertText . '
-                      <a href="tampil_mhs.php" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></a>
-                    </div>';
-            }
-          }
-          ?>
           <div class="table-responsive small">
             <table border="1" class="table table-striped table-sm">
               <thead>
@@ -92,7 +63,6 @@ $mahasiswa = $mahasiswaController->getAllMahasiswa();
             </table>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </div>

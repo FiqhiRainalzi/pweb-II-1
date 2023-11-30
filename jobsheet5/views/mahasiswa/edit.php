@@ -22,17 +22,15 @@ if (isset($_GET['id'])) {
             $agama = $_POST['agama'];
             $alamat = $_POST['alamat'];
 
-            $result = $mahasiswaController->updateMahasiswa($id,$nim,$nama,$tempat_lahir,$tanggal_lahir,$jenis_kelamin,$agama,$alamat);
+            $result = $mahasiswaController->updateMahasiswa($id, $nim, $nama, $tempat_lahir, $tanggal_lahir, $jenis_kelamin, $agama, $alamat);
 
-            if($result){
-                header ("location:index.php");
-            }
-            else{
-                header ("location:edit.php");
+            if ($result) {
+                header("location:../mahasiswa");
+            } else {
+                header("location:edit.php");
             }
         }
-    }
-    else{
+    } else {
         echo "mahasiswa tidak ditemukan";
     }
 }
@@ -49,44 +47,44 @@ if (isset($_GET['id'])) {
 </head>
 
 <body>
-    
+
     <?php
-    if($mahasiswaData){
+    if ($mahasiswaData) {
     ?>
-    <div class="py-3">
-    <form class="container"  action="" method="post">
-    <h3>Edit Data Mahasiswa</h3>
-        <?php
-        foreach ($mahasiswaData as $d => $value) {
-        ?>
-        <table  >
-            <tr>
-                <td width="100" >
-                    <?php echo $d; ?>
-                </td>
-                <td>
-                    <input class="form-control" type="text" name="<?php echo $d ?>" value="<?php echo $value; ?>">
-                </td>
-            </tr>
-        
-        <?php
-        }
-        ?>
-        <tr>
-            <td></td>
-            <td>
-            <input class="btn btn-primary" type="submit" name="submit" value="simpan">
-            <a href="index.php" class="btn btn-secondary" type="button">Kembali</a>                    
-            </td>
-        </tr>
-        </table>
-        
-        
-    </form>
-    <?php
-                }
+        <div class="py-3">
+            <form class="container" action="" method="post">
+                <h3>Edit Data Mahasiswa</h3>
+                <?php
+                foreach ($mahasiswaData as $d => $value) {
                 ?>
-                </div>
+                    <table>
+                        <tr>
+                            <td width="100">
+                                <?php echo $d; ?>
+                            </td>
+                            <td>
+                                <input class="form-control" type="text" name="<?php echo $d ?>" value="<?php echo $value; ?>">
+                            </td>
+                        </tr>
+
+                    <?php
+                }
+                    ?>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input class="btn btn-primary" type="submit" name="submit" value="simpan">
+                            <a href="../mahasiswa" class="btn btn-secondary" type="button">Kembali</a>
+                        </td>
+                    </tr>
+                    </table>
+
+
+            </form>
+        <?php
+    }
+        ?>
+        </div>
 </body>
 
 </html>
